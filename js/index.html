@@ -7,13 +7,125 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+
+        body{
+            margin: 0;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 30px;
+            background-color: lightgray;
+        }
+
+        .box{
+            border: 1px solid lightgray;
+            ;
+        }
         
-        
+        .header{
+            background-color: green;
+        }
+
+        .top_content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top_content h2{
+            color: white;
+            padding-left: 20px;
+        }
+
+        .top_content .a_top{
+            padding-right: 600px ;
+        }
+
+        .top_content nav a{
+            text-decoration: none;
+            color:white;
+            padding-right: 25px;
+        }
+
+        .main_contain{
+            margin-top: 30px;
+        }
+
+        .main_contain p{
+            padding-left: 20px;
+        }
+
+        .box{
+            border: 1px solid black;
+        }
 
     </style>
 </head>
 <body>
 
+    <div class="header">
+        <div class="top_content">
+                <h2>Trulia</h2>
+                <nav class="a_top">
+                    <a href="#">Buy</a>
+                    <a href="#">News</a>
+                    <a href="#">Message</a>
+                    <a href="#">Local</a>
+                    <a href="#">More</a>
+                </nav>
+            <div>
+                <nav>
+                    <a href="#">Ticket</a>
+                    <a href="#">Search Here</a>
+                </nav>
+            </div>              
+        </div>
+    </div>
+
+    <div class="main_contain">
+        <p>Houses For Sale</p>
+        <div class="box grid">
+            <div class="card_content">
+                <img src="../imgs/h1.jpg">
+
+            </div>
+
+            <div>
+                <p>RM 206 000</p>
+            </div>
+
+        </div>
+        <div class="box grid">
+            <div class="card_content">
+                <img src="../imgs/h1.jpg">
+
+            </div>
+
+            <div>
+                <p>RM 206 000</p>
+            </div>
+
+        </div>
+        <div class="box grid">
+            <div class="card_content">
+                <img src="../imgs/h1.jpg">
+
+            </div>
+
+            <div>
+                <p>RM 206 000</p>
+            </div>
+
+        </div>
+    </div>
 
 
 <script src="javascript/main.js"></script>
